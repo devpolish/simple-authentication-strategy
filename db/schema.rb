@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20180503062209) do
     t.datetime "last_sign_in_at"
     t.string "last_sign_in_ip", limit: 128
     t.integer "sign_in_count"
+    t.integer "count_login", default: 0
     t.integer "failed_logins_count", default: 0
     t.datetime "lock_expires_at"
     t.datetime "last_access_at"

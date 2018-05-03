@@ -20,5 +20,5 @@ Authenticate.configure do |config|
   # config.allow_sign_up = true
   # config.routes = true
   # config.reset_password_within = 2.days
-  # config.modules = []
+  config.modules = [LoginCount]
 end

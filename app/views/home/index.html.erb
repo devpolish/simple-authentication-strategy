@@ -3,5 +3,6 @@
 <p><%= current_user.email %></p>
 
 <% if current_user %>
-  <%= link_to 'Destroy session', session_path, method: :delete %>
+  <p>Times signed <%= current_user.count_login %></p>
+  <%= link_to "Sign out", session_path, :method => :delete %>
 <% end %>
